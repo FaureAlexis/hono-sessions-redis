@@ -14,7 +14,7 @@ $ pnpm add hono-sessions-redis
 ```js
 import { Hono } from "hono";
 import { sessionMiddleware } from "hono-sessions";
-import { RedisStoreAdapter } from "connect-redis-hono";
+import { RedisStoreAdapter } from "hono-sessions-redis";
 
 // ...
 // create your RedisClient and connect to your redis server
