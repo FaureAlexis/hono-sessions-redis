@@ -2,8 +2,9 @@
   "name": "hono-sessions-redis",
   "version": "1.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "NODE_ENV=production node build.cjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,5 +13,8 @@
   "dependencies": {
     "hono-sessions": "^0.3.4",
     "ioredis": "^5.3.2"
+  },
+  "devDependencies": {
+    "esbuild": "^0.20.2"
   }
 }
